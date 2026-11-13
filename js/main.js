@@ -64,6 +64,7 @@
       <ul>
         <li>火炭黃竹洋街14-18號<br>華生工業大廈 5 樓 503 室</li>
         <li><a href="tel:+85226820366">Tel. 852-2682 0366</a></li>
+        <li><a href="https://wa.me/85266801811?text=Hello!%20我想查詢" target="_blank" rel="noopener">WhatsApp 852 6680 1811</a></li>
         <li><a href="mailto:info@pro-iaq.com">info@pro-iaq.com</a></li>
         <li><a href="https://www.instagram.com/pro.iaq_hk/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/ProIAQ" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.youtube.com/channel/UC4YN7Dem517LB-tCsEQGZ5A" target="_blank" rel="noopener">YouTube</a></li>
       </ul>
