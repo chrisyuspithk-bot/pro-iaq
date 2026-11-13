@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>聯絡我們 | Pro-IAQ</title>
+<meta name="description" content="聯絡 Pro-IAQ：火炭黃竹洋街華生工業大廈，電話 852-2682 0366，電郵 info@pro-iaq.com。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css?v=20261113b">
+</head>
+<body>
+<nav class="nav" id="site-nav"></nav>
+
+<section class="page-hero wrap">
+  <div class="crumbs"><a href="index.html">首頁</a> / 聯絡我們</div>
+  <div class="eyebrow">Contact</div>
+  <h1>我們樂意聆聽。</h1>
+</section>
+<section style="padding-top:0">
+  <div class="wrap split">
+    <div class="panel" style="padding:32px">
+      <h2>傳送訊息</h2>
+      <p>填妥後會開啟 WhatsApp，傳送至 +852 6680 1811。</p>
+      <form class="form" id="wa-form">
+        <input name="name" required placeholder="姓名">
+        <input type="email" name="email" placeholder="電郵">
+        <input name="phone" placeholder="聯絡電話">
+        <textarea name="message" required placeholder="查詢內容"></textarea>
+        <button class="btn btn-primary" type="submit">以 WhatsApp 傳送</button>
+      </form>
+    </div>
+    <div>
+      <h2>辦事處</h2>
+      <p>Rm 503, 5/F, Wah Sang Industrial Building,<br>14-18 Wong Chuk Yeung Street, Fo Tan, Shatin</p>
+      <p>火炭黃竹洋街14-18號華生工業大廈 5 樓 503 室</p>
+      <p>Tel. <a href="tel:+85226820366">852-2682 0366</a><br>Email. <a href="mailto:info@pro-iaq.com">info@pro-iaq.com</a></p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+        <a class="btn btn-primary" href="https://wa.me/85266801811?text=Hello!%20我想查詢" target="_blank" rel="noopener">WhatsApp 查詢</a>
+        <a class="btn btn-ghost" href="https://maps.google.com/?q=Wah+Sang+Industrial+Building+Fo+Tan" target="_blank" rel="noopener">開啟地圖</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="site-foot"></footer>
+<a class="wa" href="https://wa.me/85266801811?text=Hello!%20我想查詢" target="_blank" rel="noopener" aria-label="WhatsApp 查詢">WA</a>
+<script src="js/main.js?v=20261113b"></script>
+
+<script>
+document.getElementById("wa-form").addEventListener("submit", function(e){
+  e.preventDefault();
+  var f = e.target;
+  var name = (f.name.value||"").trim();
+  var email = (f.email.value||"").trim();
+  var phone = (f.phone.value||"").trim();
+  var msg = (f.message.value||"").trim();
+  var lines = ["Hello! 我想查詢", "", "姓名：" + name];
+  if(email) lines.push("電郵：" + email);
+  if(phone) lines.push("聯絡電話：" + phone);
+  lines.push("查詢內容：" + msg);
+  var url = "https://wa.me/85266801811?text=" + encodeURIComponent(lines.join("\n"));
+  window.open(url, "_blank", "noopener");
+});
+</script>
+
+</body>
+</html>
